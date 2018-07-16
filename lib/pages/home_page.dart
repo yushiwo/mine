@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './SidebarPage.dart';  //侧边栏
+import './h5/custom_webview.dart';  //侧边栏
 
 class HomePage extends StatefulWidget {
   @override
@@ -47,7 +48,8 @@ class _HomePageState extends State<HomePage> {
                 trailing: new Icon(Icons.arrow_right),
                 onTap: () {
                   Navigator.of(context).pop();
-                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new SidebarPage("second")));
+//                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new CustomWebView("http://app.mi.com/details?id=com.netease.geek")));
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new CustomWebView("http://app.mi.com/details?id=com.netease.camera&ref=search")));
                 }
             ),
             new ListTile(   //第二个功能项
